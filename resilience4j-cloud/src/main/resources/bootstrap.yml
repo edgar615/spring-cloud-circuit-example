@@ -1,0 +1,9 @@
+spring:
+#  profiles:
+#    active: dev
+  cloud:
+    config:
+#      label: master
+#      profile: prod
+      uri: "http://localhost:8080/"
+

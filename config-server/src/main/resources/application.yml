@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  applicaiton:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/edgar615/spring-cloud-consul-config-data/"
+          search-paths: /service-config/circuit-breaker
+#          username: xxx
+#          password: xxx
+          #Skipping SSL Certificate Validation
+          #          skipSslValidation: true
+          #Setting HTTP Connection Timeout
+#          timeout: 4
+#        native:
+#          searchLocations: "classpath:/common-config"

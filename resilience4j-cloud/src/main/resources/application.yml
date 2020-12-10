@@ -1,0 +1,18 @@
+management:
+  info:
+    defaults:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+spring:
+#  profiles:
+#    active: dev
+  application:
+    name: circuit-breaker
+server:
+  port: 9000
+
+
